@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style> 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+</style>
+<script> 
+function Function1() {
+  var x = document.getElementById("myVar");
+  x.style.color = "Tomato";
+}
+function Function2() {
+  var x = document.getElementById("myVar");
+  x.style.color = "orange";
+}
+function Function3() {
+  var x = document.getElementById("myVar");
+  x.style.color = "MediumSeaGreen";
+}
+function Function4() {
+  var x = document.getElementById("myVar");
+  x.style.color = "black";
+}
+</script>
   <title>LedLampor</title>
   <link rel="stylesheet" href="./style.css">
   <meta charset="UTF-8">
 </head>
 <body>
-<h1>Smart lamps</h1>
+  
+  <header>
+    <h1><var id="myVar">Smart lamps</var></h1>
+   
+  </header>
 <img src="images/pålsjöskog.jpg" width="50%" height="50%">
 <div>
 <table>
   <tr> 
-    <th style="background-color:Tomato;">Danger <button type="button" onclick="alert('Du har bytt inställning!')">Byt färg!</button></th>
-    <th style="background-color:orange;">Vorried <button type="button" onclick="alert('Du har bytt inställning!')">Byt färg!</button></th>
-    <th style="background-color: MediumSeaGreen;">Safe <button type="button" onclick="alert('Du har bytt inställning!')">Byt färg!</button></th>
-    <th style="border: 2px solid black;">Spotlight <button type="button" onclick="alert('Du har bytt inställning!')">Byt färg!</button></th>
+    <th style="background-color:Tomato;">Danger <button type="button" onclick="Function1()">Byt färg!</button></th>
+    <th style="background-color:orange;">Vorried <button type="button" onclick="Function2()">Byt färg!</button></th>
+    <th style="background-color: MediumSeaGreen;">Safe <button type="button" onclick="Function3()">Byt färg!</button></th>
+    <th style="border: 2px solid black;">Spotlight <button type="button" onclick="Function4()">Byt färg!</button></th>
   </tr>
 
   </div>
   </body>
 </html>
+
